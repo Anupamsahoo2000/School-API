@@ -11,7 +11,7 @@ const sequelize = new Sequelize(
     dialectOptions: {
       ssl: {
         require: true,
-        rejectUnauthorized: false, // Required for some MySQL hosts
+        rejectUnauthorized: false, // Required for some MySQL hosts like Planetscale
       },
     },
     logging: false,
